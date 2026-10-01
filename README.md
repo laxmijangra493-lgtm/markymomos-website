@@ -62,3 +62,6 @@ For commercial production, ask the client for approved brand assets rather than 
 - Inline field feedback helps users correct issues before submit.
 - Submission ends in an achievement-style success modal with a staged check, burst and clear next-step message.
 - Google Apps Script integration remains unchanged: put the deployed web-app URL in `franchise.js` before launch.
+
+
+Vibe Coded
