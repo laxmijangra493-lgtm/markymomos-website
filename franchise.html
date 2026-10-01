@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Franchise Enquiry — Marky Momos</title>
+<meta name="description" content="Start a Marky Momos franchise conversation in around 2 minutes. Share the essentials and let the team take it from there.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="franchise.css">
+</head>
+<body class="franchise-page">
+<div class="noise"></div>
+<header class="nav shell franchise-nav">
+  <a class="brand" href="index.html" aria-label="Marky Momos home">
+    <span class="brand-mark"><span>MM</span></span>
+    <span class="brand-word"><b>MARKY</b><em>MOMOS</em></span>
+  </a>
+  <div class="franchise-nav-right">
+    <span class="nav-proof">FRANCHISE · ~2 MIN</span>
+    <a class="back-home" href="index.html">← Back to website</a>
+  </div>
+</header>
+
+<main>
+<section class="franchise-hero shell">
+  <div class="hero-kicker"><span class="live-dot"></span> FRANCHISE ENQUIRY · AROUND 2 MINUTES</div>
+  <div class="hero-grid">
+    <div class="hero-content">
+      <p class="mini-label">ONE SMALL FORM. ONE BIG POSSIBILITY.</p>
+      <h1>Bring the <span>Marky craving</span><br>to your city.</h1>
+      <p class="hero-lede">You don't need the whole plan figured out yet. Tell us the essentials, and start the conversation with the Marky team.</p>
+
+      <div class="promise-row">
+        <div><b>~02:00</b><span>Typical time</span></div>
+        <div><b>05</b><span>Essential answers</span></div>
+        <div><b>₹0</b><span>To enquire</span></div>
+      </div>
+
+      <div class="reassurance">
+        <span>✓</span>
+        <div>
+          <strong>No pitch deck. No pressure.</strong>
+          <small>This is simply your first step. Rough estimates are absolutely fine.</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+      <div class="art-card card-main">
+        <span>MARKY PARTNER</span>
+        <b>YOUR<br>CITY.<br>OUR CRAVING.</b>
+        <small>START WITH THE FIRST STEP →</small>
+      </div>
+      <div class="art-chip chip-city">YOUR CITY ↗</div>
+      <div class="art-chip chip-time">~ 2 MIN</div>
+      <div class="art-dumpling">M</div>
+      <div class="art-star">✦</div>
+      <div class="art-caption">READY WHEN<br>YOU ARE.</div>
+    </div>
+  </div>
+
+  <div class="journey-strip" aria-label="What happens next">
+    <div class="journey-intro"><span>01</span><strong>Keep it simple.</strong></div>
+    <div class="journey-step"><span>01</span><div><b>Tell us your city</b><small>Where you want to explore.</small></div></div>
+    <div class="journey-line"></div>
+    <div class="journey-step"><span>02</span><div><b>Share your range</b><small>A rough investment is enough.</small></div></div>
+    <div class="journey-line"></div>
+    <div class="journey-step"><span>03</span><div><b>We take it from here</b><small>The team follows up with you.</small></div></div>
+  </div>
+</section>
+
+<section class="form-zone shell">
+  <div class="form-intro">
+    <div class="step-badge">01</div>
+    <div>
+      <p class="mini-label">START YOUR ENQUIRY</p>
+      <h2>Let’s start with <span>you.</span></h2>
+      <p>Five quick essentials. One optional note. No account and no payment.</p>
+    </div>
+  </div>
+
+  <div class="form-meta-row">
+    <div class="form-progress" aria-live="polite">
+      <div class="progress-copy"><strong id="progressText">0 of 5 essentials</strong><span id="progressHint">Take your time — you're doing great.</span></div>
+      <div class="progress-track"><span id="progressBar"></span></div>
+    </div>
+    <div class="form-time"><span class="time-dot"></span> Usually under 2 minutes</div>
+  </div>
+
+  <form id="franchiseForm" novalidate>
+    <div class="question-card" data-field-card>
+      <div class="question-no">01</div>
+      <label for="franchiseName"><strong>What should we call you?</strong><span>Your name helps us make the follow-up personal.</span></label>
+      <div class="field-wrap"><input id="franchiseName" name="name" autocomplete="name" placeholder="e.g. Rahul Sharma" required><small class="field-feedback" aria-live="polite"></small></div>
+    </div>
+
+    <div class="question-card" data-field-card>
+      <div class="question-no">02</div>
+      <label for="franchiseCity"><strong>Where are you thinking?</strong><span>City or area where you'd like to explore an outlet.</span></label>
+      <div class="field-wrap"><input id="franchiseCity" name="city" autocomplete="address-level2" placeholder="e.g. Jaipur" required><small class="field-feedback" aria-live="polite"></small></div>
+    </div>
+
+    <div class="question-card" data-field-card>
+      <div class="question-no">03</div>
+      <label for="franchisePhone"><strong>What’s the best number to reach you?</strong><span>Only used for your franchise enquiry.</span></label>
+      <div class="field-wrap"><input id="franchisePhone" name="phone" autocomplete="tel" inputmode="tel" maxlength="15" placeholder="10-digit mobile number" required><small class="field-feedback" aria-live="polite"></small></div>
+    </div>
+
+    <div class="question-card" data-field-card>
+      <div class="question-no">04</div>
+      <label for="franchiseInvestment"><strong>What investment range are you considering?</strong><span>No need to have every number figured out yet.</span></label>
+      <div class="field-wrap"><select id="franchiseInvestment" name="investment" required>
+        <option value="" selected disabled>Choose a range</option>
+        <option>15–20 lakh</option><option>20–30 lakh</option><option>30 lakh+</option><option>Still figuring it out</option>
+      </select><small class="field-feedback" aria-live="polite"></small></div>
+    </div>
+
+    <div class="question-card" data-field-card>
+      <div class="question-no">05</div>
+      <label for="franchiseStart"><strong>When would you like to start?</strong><span>A rough timeline is completely fine.</span></label>
+      <div class="field-wrap"><select id="franchiseStart" name="start" required>
+        <option value="" selected disabled>Choose your timeline</option>
+        <option>Immediately</option><option>In a month</option><option>In 3 months</option><option>Just researching</option>
+      </select><small class="field-feedback" aria-live="polite"></small></div>
+    </div>
+
+    <div class="question-card optional-card" data-field-card>
+      <div class="question-no">06</div>
+      <label for="franchiseNote"><strong>Anything else you'd like us to know? <em>Optional</em></strong><span>A location idea, experience, or simply what you want to learn.</span></label>
+      <div class="field-wrap"><textarea id="franchiseNote" name="note" maxlength="500" placeholder="I’m exploring a location in..."></textarea><small class="field-feedback">Optional — skip this and you're still ready to submit.</small></div>
+    </div>
+
+    <input class="trap-field" id="franchiseWebsite" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <input type="hidden" id="franchiseSource" name="source" value="marky-momos-franchise-page">
+
+    <div class="submit-zone">
+      <div>
+        <div class="submit-title">Ready when you are.</div>
+        <p>Send it through. The next step is a conversation, not a commitment.</p>
+      </div>
+      <button class="btn btn-red btn-pop submit-btn" type="submit"><span>Send my enquiry</span><span>↗</span></button>
+    </div>
+    <p id="franchiseNoteStatus" class="form-status" aria-live="polite">Your details stay within this enquiry flow. No account needed.</p>
+  </form>
+</section>
+</main>
+
+<div class="success-modal" id="successModal" aria-hidden="true">
+  <div class="success-backdrop" data-success-close></div>
+  <div class="success-dialog achievement-dialog" role="dialog" aria-modal="true" aria-labelledby="successTitle">
+    <button class="success-close" data-success-close aria-label="Close">×</button>
+    <div class="success-burst" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="achievement-icon"><span>✓</span></div>
+    <p class="success-kicker">STEP 01 · COMPLETE</p>
+    <h3 id="successTitle">You’re officially on the next step.</h3>
+    <p>Your franchise enquiry is in. Nice work — you just turned an idea into a real conversation.</p>
+    <div class="next-card"><span>02</span><div><strong>What happens next?</strong><small>The Marky team reviews your details and follows up about the opportunity.</small></div></div>
+    <a class="btn btn-black success-home" href="index.html">Back to Marky Momos <span>↗</span></a>
+  </div>
+</div>
+<script src="franchise.js"></script>
+</body>
+</html>
